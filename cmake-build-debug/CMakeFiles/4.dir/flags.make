@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/znjuko/Рабочий стол/kursach/headers" -I"/home/znjuko/Рабочий стол/kursach/src" 
+CXX_INCLUDES = -I"/home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel/headers" -I"/home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel/src" 
 

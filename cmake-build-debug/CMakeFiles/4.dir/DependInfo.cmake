@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/znjuko/Рабочий стол/kursach/main.cpp" "/home/znjuko/Рабочий стол/kursach/cmake-build-debug/CMakeFiles/4.dir/main.cpp.o"
+  "/home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel/main.cpp" "/home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel/cmake-build-debug/CMakeFiles/4.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

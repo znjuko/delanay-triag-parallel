@@ -1,4 +1,4 @@
-# Install script for directory: /home/znjuko/Рабочий стол/kursach
+# Install script for directory: /home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/znjuko/Рабочий стол/kursach/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/znjuko/Рабочий стол/kursach/delaunay-triag-parallel/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

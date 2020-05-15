@@ -11,14 +11,23 @@ template<typename Type>
 class Tetrahedron {
 public :
     Tetrahedron(Point<Type> p1, Point<Type> p2, Point<Type> p3, Point<Type> p4);
+
     ~Tetrahedron();
+
 private :
+
+
+    float ComputeCRadius();
+
+    float ComputeIRadius();
+
+    float GetQuality();
+
     Point<Type> *Points;
     Triangle<Type> *Faces;
     Line<Type> *Edges;
-    float ComputeCRadius();
-    float ComputeIRadius();
     float Volume;
     float InRadius;
     float CircumRadius;
+    float Quality;
 };

@@ -60,6 +60,7 @@ Tetrahedron<Type>::Tetrahedron(Point<Type> p1, Point<Type> p2, Point<Type> p3, P
     Volume = 1 / 6 * Solve44(volumeMatrix);
     CircumRadius = ComputeCRadius();
     InRadius = ComputeIRadius();
+    Quality = GetQuality();
 };
 
 template<typename Type>
@@ -84,5 +85,18 @@ float Tetrahedron<Type>::ComputeCRadius() {
 
 template<typename Type>
 float Tetrahedron<Type>::ComputeIRadius() {
-    return float( 3 * Volume / (Faces[0].GetArea() + Faces[1].GetArea() + Faces[2].GetArea() + Faces[3].GetArea()));
+    return float(3 * Volume / (Faces[0].GetArea() + Faces[1].GetArea() + Faces[2].GetArea() + Faces[3].GetArea()));
+}
+
+template<typename Type>
+float Tetrahedron<Type>::GetQuality() {
+
+    float hs = 0;
+    for (unsigned int i = 0; i < 6; i++) {
+        hs += Edges[i].GetLength() * Edges[i].GetLength();
+    }
+
+    hs = sqrt(hs);
+
+    return sqrt(3) / 216 * pow(hs, 3) / Volume;
 };
